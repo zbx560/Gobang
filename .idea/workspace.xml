@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2ded327-5fad-41c3-9326-23752851ac9c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Gomoku.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Gomoku.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a2ded327-5fad-41c3-9326-23752851ac9c" name="Default" comment="添加背景音乐并附加可选路径&#10;在棋局结束后改为弹出对话框告知胜负状况。&#10;修改为Tkinter的新版本表示方法">
+      <change afterPath="$PROJECT_DIR$/FromTheNewWorld.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Record.py" beforeDir="false" afterPath="$PROJECT_DIR$/Record.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -314,29 +327,60 @@
       <option name="presentableId" value="Default" />
       <updated>1465214550054</updated>
     </task>
+    <task id="LOCAL-00001" summary="添加背景音乐并附加可选路径&#10;在棋局结束后改为弹出对话框告知胜负状况。&#10;修改为Tkinter的新版本表示方法">
+      <created>1601285695949</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601285695949</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="添加背景音乐并附加可选路径&#10;在棋局结束后改为弹出对话框告知胜负状况。&#10;修改为Tkinter的新版本表示方法" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加背景音乐并附加可选路径&#10;在棋局结束后改为弹出对话框告知胜负状况。&#10;修改为Tkinter的新版本表示方法" />
   </component>
   <component name="WindowStateProjectService">
     <state x="462" y="213" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601281534789">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="462" y="213" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1601281534789" />
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1601285458148">
+    <state x="367" y="0" key="CommitChangelistDialog2" timestamp="1601285694823">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601285458148" />
-    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1601285458147">
+    <state x="367" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1601285694823" />
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1601286380345">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601285458147" />
-    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1601285458147">
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1601286380345" />
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1601285578848">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601285458147" />
-    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1601285458148">
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601285578848" />
+    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1601285578848">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601285458148" />
+    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601285578848" />
+    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1601285578848">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601285578848" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1601285578848">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601285578848" />
     <state x="270" y="57" key="SettingsEditor" timestamp="1601112667097">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
