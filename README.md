@@ -1,9 +1,9 @@
 #GOMOKU
 
 ##Overview
-*Gomoku*, a very easy and light computher game implemented with python and Tkinter.
+*Gomoku*, a very easy and light computher game implemented with python and tkinter.
 
-Gomoku, 这是一个非常简单的轻量级的电脑游戏，这款游戏被用Python语言和Tkinter图形库实现。
+Gomoku, 这是一个非常简单的轻量级的电脑游戏，这款游戏被用Python语言和tkinter图形库实现。
 
 ##Screenshot
 ![screenshot icon](./screenshot.png)

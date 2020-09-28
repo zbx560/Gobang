@@ -1,13 +1,17 @@
 #!/usr/bin/env python
 #-*- coding: utf-8 -*-
 
-import Tkinter
+# import tkinter
+import tkinter
+import pygame
+import tkinter.messagebox #这个是消息框，对话框的关键
+from tkinter import *
 import math
 import Point
 import Record
 
-class Chess_Board_Canvas(Tkinter.Canvas):
-    #棋盘绘图板,继承自Tkinter.Canvas类
+class Chess_Board_Canvas(tkinter.Canvas):
+    #棋盘绘图板,继承自tkinter.Canvas类
     def __init__(self, master=None, height=0, width=0):
         '''
         棋盘类初始化
@@ -15,7 +19,7 @@ class Chess_Board_Canvas(Tkinter.Canvas):
         :param height: 棋盘的高度
         :param width: 棋盘的宽度
         '''
-        Tkinter.Canvas.__init__(self, master, height=height, width=width)
+        tkinter.Canvas.__init__(self, master, height=height, width=width)
         self.step_record_chess_board = Record.Step_Record_Chess_Board()
         #初始化计步器对象
         self.init_chess_board_points()    #画点
@@ -56,6 +60,8 @@ class Chess_Board_Canvas(Tkinter.Canvas):
         :param event:
         :return:
         '''
+        # self.create_text(240, 550, text='the white wins')
+        # tkinter.messagebox.showinfo('提示', '人生苦短')
         for i in range(15):
             for j in range(15):
                 square_distance = math.pow((event.x - self.chess_board_points[i][j].pixel_x), 2) + math.pow((event.y - self.chess_board_points[i][j].pixel_y), 2)
@@ -67,10 +73,10 @@ class Chess_Board_Canvas(Tkinter.Canvas):
                 if (square_distance <= 200) and (not self.step_record_chess_board.has_record(i, j)): #距离小于14并且没有落子
                     if self.step_record_chess_board.who_to_play() == 1:
                         #若果根据步数判断是奇数次,那么白下
-                        self.create_oval(self.chess_board_points[i][j].pixel_x-10, self.chess_board_points[i][j].pixel_y-10, self.chess_board_points[i][j].pixel_x+10, self.chess_board_points[i][j].pixel_y+10, fill='red')
+                        self.create_oval(self.chess_board_points[i][j].pixel_x-10, self.chess_board_points[i][j].pixel_y-10, self.chess_board_points[i][j].pixel_x+10, self.chess_board_points[i][j].pixel_y+10, fill='white')
 
                     elif self.step_record_chess_board.who_to_play() == 2:
-                        self.create_oval(self.chess_board_points[i][j].pixel_x-10, self.chess_board_points[i][j].pixel_y-10, self.chess_board_points[i][j].pixel_x+10, self.chess_board_points[i][j].pixel_y+10, fill='green')
+                        self.create_oval(self.chess_board_points[i][j].pixel_x-10, self.chess_board_points[i][j].pixel_y-10, self.chess_board_points[i][j].pixel_x+10, self.chess_board_points[i][j].pixel_y+10, fill='black')
 
                     self.step_record_chess_board.insert_record(i, j)
                     #插入落子数据,落子最多225,这个程序没有实现AI
@@ -80,25 +86,29 @@ class Chess_Board_Canvas(Tkinter.Canvas):
 
 
                     if result == 1:
-                        self.create_text(240, 550, text='the white wins')
+                        self.create_text(240, 550, text='白棋获胜')
+                        tkinter.messagebox.showinfo('提示', '白棋获胜')
+
                         #解除鼠标左键绑定
                         self.unbind('<Button-1>')
                         # """Unbind for this widget for event SEQUENCE  the
                         #     function identified with FUNCID."""
 
                     elif result == 2:
-                        self.create_text(240, 550, text='the black wins')
+                        self.create_text(240, 550, text='黑棋获胜')
+                        tkinter.messagebox.showinfo('提示', '黑棋获胜')
                         #解除鼠标左键绑定
                         self.unbind('<Button-1>')
 
 
-class Chess_Board_Frame(Tkinter.Frame):
+class Chess_Board_Frame(tkinter.Frame):
     def __init__(self, master=None):
-        Tkinter.Frame.__init__(self, master)
+        tkinter.Frame.__init__(self, master)
         self.create_widgets()
 
     def create_widgets(self):
-        self.chess_board_label_frame = Tkinter.LabelFrame(self, text="Chess Board", padx=5, pady=5)
+        self.chess_board_label_frame = tkinter.LabelFrame(self, text="五子棋", padx=0, pady=0)
+        # self.create_text(240, 550, text='the white wins')
         self.chess_board_canvas = Chess_Board_Canvas(self.chess_board_label_frame, height=600, width=480)
 
         self.chess_board_canvas.bind('<Button-1>', self.chess_board_canvas.click1)

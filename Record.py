@@ -48,7 +48,7 @@ class Step_Record_Chess_Board:
         步数加1
         '''
         self.records[x][y] = Step_Record(self.count)
-        print '{0}'.format('white' if ((self.count+1) % 2 + 1) == 1 else 'black') ,'< x:', x, ', y:', y,'>'
+        # print '{0}'.format('white' if ((self.count+1) % 2 + 1) == 1 else 'black') ,'< x:', x, ', y:', y,'>'
 
         self.count += 1;
 
